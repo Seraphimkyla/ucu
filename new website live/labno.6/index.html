@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title> University Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <selection class="header">
+            <nav>
+                <a href="index.html"><img src="URDANETA_CITY_UNIVERSITY__3_-removebg-preview.png"></a>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">NEWS & EVENTS</a></li>
+                        <li><a href="">ABOUT</a></li>
+                        <li><a href="">COURSES</a></li>
+                        <li><a href="">ADMISSIONS</a></li>
+                        <li><a href="">SERVICES</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="text-box">
+                <label for="course">Course</label>
+                <select id="course">
+                    <option>Bachelor of Science in Computer Engineering</option>
+                    <option>Bachelor of Science in Mechanical Engineering</option>
+                    <option>Bachelor of Science in Civil Engineering</option>
+                    <option>Bachelor of Science in Electronics and Communications Engineering</option>
+                    <option>Bachelor of Science in Electrical Engineering</option>
+                    <option>Bachelor of Science in Information Technology</option>
+                </select>
+                
+                <label for="school">School</label>
+                <input list="schools" id="school" placeholder="Type or select a school">
+                <datalist id="schools">
+                    <option value="Urdaneta City University">
+                    <option value="Pangasinan State University">
+                    <option value="University of Pangasinan">
+                    <option value="Lyceum Northwestern University">
+                    <option value="University of Luzon">
+                    <option value="AMA">
+                    <option value="STI">
+                </datalist>
+                <button onclick="submitForm()">Submit</button>
+            </div>
+
+            <script>
+                function submitForm(){
+                    alert("Thank you. Your Selection is Successfully recorded!");
+                }
+            </script>
+            
+        </selection>
+    </body>
+</html>
